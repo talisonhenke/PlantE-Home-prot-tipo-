@@ -56,7 +56,7 @@ class ErvasController extends Controller
          ]);
 
         $foto = $request->file('foto');
-        $foto_nome = rand() . '.' . $foto->getClientOriginalExtension();
+        $foto_nome = $foto->getClientOriginalName(). '.' . $foto->getClientOriginalExtension();
         $foto->move(public_path('../../../public/images/fotos_ervas'), $foto_nome);
             
         $erva = Ervas::create([
@@ -66,7 +66,7 @@ class ErvasController extends Controller
          ]);
          
 
-         return redirect('/Ervas')->with('success', 'Erva cadastrada com sucesso!');
+         return redirect('/Ervas')->with('success', 'Erva cadastrada com sucesso! '.$foto);
     }
 
     /**

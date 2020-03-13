@@ -33,8 +33,8 @@
               <input type="text" class="form-control" name="descricao"/>
           </div>
           <div> 
-              <label for="foto_erva">Descrição:</label>
-              <input type="file" id="foto_erva" name="foto_erva">
+              <label for="foto">Descrição:</label>
+              <input type="file" id="foto" name="foto"/>
           </div>
     
           <button type="submit" class="btn btn-primary">Adicionar erva</button>
