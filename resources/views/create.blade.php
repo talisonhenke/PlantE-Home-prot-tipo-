@@ -32,6 +32,10 @@
               <label for="descricao">Descrição:</label>
               <input type="text" class="form-control" name="descricao"/>
           </div>
+          <div> 
+              <label for="foto_erva">Descrição:</label>
+              <input type="file" id="foto_erva" name="foto_erva">
+          </div>
     
           <button type="submit" class="btn btn-primary">Adicionar erva</button>
       </form>

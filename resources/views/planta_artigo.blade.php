@@ -119,7 +119,8 @@
           	 <h1>{{$erva->nome}}</h1>
 	          	<p class="text-primary text-justify">
                         {{$erva->descricao}}
-                </p>
+              </p>
+              
             
           </article> 
       </div>

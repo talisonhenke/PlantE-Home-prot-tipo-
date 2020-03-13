@@ -174,7 +174,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
       </div>
       <div class="col-lg-6">
-        <img class="img-fluid rounded" src="../../images/flower2.jpg" alt="">
+        <img class="img-fluid rounded" src="../../images/hands_plants.jpg" alt="">
       </div>
     </div>
     <!-- /.row -->

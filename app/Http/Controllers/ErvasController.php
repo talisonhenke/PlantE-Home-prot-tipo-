@@ -52,12 +52,17 @@ class ErvasController extends Controller
         $validatedData = $request->validate([
              'nome_erva' => 'required|max:50',
              'descricao' => 'required|max:255',
+             'foto' => 'required|image|max:2048'
          ]);
+
+        $foto = $request->file('foto');
+        $foto_nome = rand() . '.' . $foto->getClientOriginalExtension();
+        $foto->move(public_path('../../../public/images/fotos_ervas'), $foto_nome);
             
         $erva = Ervas::create([
              'nome' => $validatedData['nome_erva'],
              'descricao' => $validatedData['descricao'],
-             'foto' => 0,
+             'foto' => $foto_nome
          ]);
          
 
